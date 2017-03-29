@@ -1,0 +1,1 @@
+(function($,Drupal,drupalSettings){'use strict';Drupal.behaviors.commentByViewer={attach:function(context){var currentUserID=parseInt(drupalSettings.user.uid,10);$('[data-comment-user-id]').filter(function(){return parseInt(this.getAttribute('data-comment-user-id'),10)===currentUserID;}).addClass('by-viewer');}};})(jQuery,Drupal,drupalSettings);
